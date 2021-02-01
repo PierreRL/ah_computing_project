@@ -1,0 +1,12 @@
+input[type="checkbox"] {
+  width:20px;
+  margin:auto;
+  display: inline;
+}
+.enrolled-text {
+    color:green;
+}
+
+.not-enrolled-text {
+    color:red;
+}

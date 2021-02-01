@@ -1,0 +1,16 @@
+
+
+
+#banner-image {
+  height: 100%;
+}
+main {
+  padding-top:100px;
+}
+
+@media screen and (min-width: 1200px) {
+  #banner-image {
+    float:right;
+    width: 40%;
+  }
+}

@@ -1,0 +1,35 @@
+input[type="radio"] {
+  display: inline;
+  width: 100px;
+  margin: 0px;
+  vertical-align: middle;
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.avatar-choice {
+  clear: both;
+  display: inline;
+  width: 50px;
+  margin: 10px;
+}
+table {
+  margin: 10px auto 10px auto;
+}
+td {
+  margin: 10px;
+}
+
+.radio-container {
+  margin: 10px auto 10px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .avatar-choice {
+    width: 100px;
+  }
+  input[type="radio"] {
+    width: 100px;
+  }
+}
