@@ -21,7 +21,8 @@ if (!$result) {
 }
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $authpassword = $row["password"];
-if ($password == $authpassword) {
+
+if (password_verify($password, $authpassword)) {
     $sql = "SELECT ID, firstname, surname, avatar FROM member WHERE email='$email'";
     $result = mysqli_query($conn, $sql);
 
