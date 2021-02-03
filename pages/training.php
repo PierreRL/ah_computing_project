@@ -21,7 +21,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $tueTraining = $row["tueTraining"];
 $wedTraining = $row["wedTraining"];
 $thuTraining = $row["thuTraining"];
-
+mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html>

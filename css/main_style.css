@@ -19,7 +19,6 @@ nav {
 }
 #avatar-container {
   text-align: center;
-  display: inline-block;
   padding: 10px;
   border-radius: 5px;
   background-color: rgb(93, 121, 185);
@@ -97,6 +96,7 @@ input {
   text-align: center;
 }
 input:focus {
+  outline: none;
   background-color: rgb(223, 223, 223);
 }
 input[type="submit"] {
@@ -105,10 +105,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: rgb(177, 177, 177);
   cursor: pointer;
-}
-
-input:focus {
-  outline: none;
 }
 
 label {

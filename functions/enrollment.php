@@ -43,4 +43,6 @@ if (!$result) {
     die('Error connecting to database.');
 }
 
+mysqli_close($conn);
+
 header('Location: ../pages/training.php');
