@@ -21,12 +21,12 @@ session_start();
             <li><a href="club_officials.php">Club Officials</a></li>
             <?php
             if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
-                echo '| <li><a href="training.php">Training</a></li> | 
+                echo ' <span class="nav-divider">|</span> <li><a href="training.php">Training</a></li>  <span class="nav-divider">|</span>
                         <li><a href="../functions/log_out.php">Log Out</a></li> <div id="avatar-container">
                         <img id="avatar" src="../images/' . $_SESSION["avatar"] . '.png">
                         <p id="avatar-text">' . $_SESSION["firstname"] . ' ' . $_SESSION["surname"] . '</p></div>';
             } else {
-                echo '| <li><a href="log_in.php">Log In</a></li> | <li><a class="selected" href="sign_up.php">Sign Up</a></li>';
+                echo '| <li><a href="log_in.php">Log In</a></li>  <span class="nav-divider">|</span> <li><a class="selected" href="sign_up.php">Sign Up</a></li>';
             }
             ?>
         </ul>
