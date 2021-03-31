@@ -46,6 +46,7 @@ if (password_verify($password, $authpassword)) {
 }
 else {
     $_SESSION["logInError"] = true;
+    mysqli_close($conn);
     header('Location: ../pages/log_in.php');
 }
 
