@@ -14,12 +14,12 @@ $email = $_POST["email"];
 $firstname = $_POST["firstname"];
 $surname = $_POST["surname"];
 $password = $_POST["password"];
-
+$avatar = $_POST["avatar"];
 $password = password_hash($password, PASSWORD_DEFAULT);
 if ($password == false) {
     die('Error hashing password');
 }
-$avatar = $_POST["avatar"];
+
 $sqlverify = "SELECT ID FROM member WHERE email='$email'";
 
 $result = mysqli_query($conn, $sqlverify);
