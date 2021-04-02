@@ -35,7 +35,7 @@ session_start();
         <img id="banner-image" src="images/logo.png">
         <div id="main-center-text">
             <h1 class="title-text">The Royal Burgh Tennis Club</h1>
-            <h3 class="subtitle-text"><em>A unqiue and dedicated tennis club</em></h3>
+            <h2 class="subtitle-text"><em>A unqiue and dedicated tennis club</em></h3>
         </div>
     </main>
 
